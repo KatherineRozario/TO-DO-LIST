@@ -1,0 +1,140 @@
+
+ *{
+    box-sizing: border-box;
+    font-family: Helvetica;
+    margin:0;
+    padding:0;
+ }
+
+.box{
+    width: 100%;
+    min-width: 100vh;
+    min-height: 100vh;
+    background:#252c3d;
+    position: fixed;
+}
+
+.page {
+width: 50%;
+border-radius: 20px;
+background: #fff4bd;
+margin: 70px auto;
+padding-left: 40px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.page h2{
+    color:#252c3d;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+   
+}
+
+.page h2 img{
+    width: 25px;
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffe882;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.bar input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.bar button{
+    border-radius: 50px;
+    outline: #252c3d;
+    background: #ffe882;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.bar button:hover {
+    background: #ffd54f; 
+}
+
+.page2{
+    width:50%;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.task {
+    background: #fff4bd; 
+    border-radius: 20px;
+    padding: 70px;
+    margin: 5px auto; 
+    width: 50%; 
+}
+
+ul {
+    padding: 0; 
+}
+
+
+ul li{
+    position: relative;
+    list-style: none;
+    font-size: medium;
+    cursor: pointer;
+    user-select: none;
+    padding: 12px 8px 12px 50px; 
+
+    border-bottom: 1px solid #ccc; 
+    
+    
+}
+
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height:20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url("radio.png");
+    background-size: cover;
+    background-position: center;
+    top:12px ;
+    left: 8px;
+
+
+}
+
+ul li.item{
+    text-decoration: line-through;
+    color: grey;
+
+}
+
+ul li.item::before{
+    background-image: url("checklist.png");
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    width: 20px;
+    height: 40px;
+    color: black;
+    text-align: center;
+}
